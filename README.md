@@ -53,8 +53,6 @@ This will start the development server and open the application in your default 
 
 - React
 - React Google Maps API
-- Google Maps JavaScript API
-- JavaScript (ES6)
 
 ## License
 
