@@ -1,0 +1,37 @@
+.burger div {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.header {
+  background-color: rgb(61, 211, 161);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+
+.startup-text {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(61, 211, 161);
+  border-radius: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.icons div {
+  color: white;
+  font-size: 20px;
+}

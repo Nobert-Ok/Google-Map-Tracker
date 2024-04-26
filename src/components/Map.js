@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TextContainer from "./Route";
 import car from "../car.png";
 import {
   GoogleMap,
@@ -7,19 +8,11 @@ import {
   Polyline,
   useJsApiLoader,
 } from "@react-google-maps/api";
+import FooterComponent from "./Footer";
 
 const containerStyle = {
   width: "100vw",
   height: "100vh",
-};
-
-const style = {
-  position: "absolute",
-  width: "100%",
-  top: "0px",
-  backgroundColor: "white",
-  padding: "20px",
-  borderRadius: "5px",
 };
 
 const center = {
@@ -170,7 +163,7 @@ const GoogleMapPolyline = () => {
   return isLoaded ? (
     <>
       <div>
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={2}>
           {/* =====Polyline===== */}
           <Polyline
             path={
@@ -192,13 +185,8 @@ const GoogleMapPolyline = () => {
           )}
         </GoogleMap>
       </div>
-      <div style={{ width: "39%" }}>
-        <div style={style}>
-          Nyabugogo - Kimironko <br />
-          Next Stop: {driverPosition.endAddress} <br />
-          ETA for Next Stop: {eta} minutes
-        </div>
-      </div>
+      <TextContainer eta={eta} endAddress={driverPosition.endAddress} />
+      <FooterComponent />
     </>
   ) : (
     <></>
