@@ -33,7 +33,7 @@ const GoogleMapPolyline = () => {
   const [eta, setEta] = useState(null);
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyCmH50lZ8N5cDdpiZhofTRDtOn2wk8MDlI",
+    googleMapsApiKey: "",
     libraries: "geometry",
   });
 
