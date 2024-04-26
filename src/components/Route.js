@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderComponent from "./HeaderComponent";
+import Header from "./Header";
 const style = {
   position: "absolute",
   width: "100%",
@@ -11,7 +11,7 @@ const style = {
 const TextContainer = ({ endAddress, eta }) => {
   return (
     <div style={style}>
-      <HeaderComponent />
+      <Header />
       <div style={{ padding: "3px 30px" }}>
         <p>
           <span className="textStyle"> Route: </span>Nyabugogo - Kimironko
